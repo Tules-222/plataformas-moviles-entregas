@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Versiones con Git</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
+
+    <h1 class="text-center">Control de Versiones con Git</h1>
+
+    <p class="fs-2 text"><strong>Git</strong> es un sistema de control de versiones distribuido, ampliamente utilizado en el desarrollo de
+        software moderno. Fue creado para gestionar proyectos de forma rápida, eficiente y colaborativa.</p>
+
+    <h2>Comandos más populares de Git</h2>
+    <ul class="mt-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <li><code>git init</code> - Inicializa un nuevo repositorio Git en el directorio actual. Este comando crea un repositorio vacío.</li>
+        <li><code>git clone [url]</code> - Clona un repositorio remoto en tu máquina local. Ejemplo: <code>git clone https://github.com/usuario/repositorio.git</code>.</li>
+        <li><code>git status</code> - Muestra el estado del repositorio: archivos modificados, nuevos archivos no rastreados, cambios preparados para el commit, etc.</li>
+        <li><code>git add [archivo]</code> - Agrega un archivo o cambios específicos al área de preparación (staging area) para el commit.</li>
+        <li><code>git commit -m "[mensaje]"</code> - Crea un commit con los archivos añadidos al área de preparación, agregando un mensaje descriptivo.</li>
+        <li><code>git push</code> - Sube los cambios locales al repositorio remoto. Generalmente se usa después de un commit para actualizar el repositorio remoto.</li>
+        <li><code>git pull</code> - Obtiene y combina los cambios del repositorio remoto al local. Equivalente a <code>git fetch</code> seguido de <code>git merge</code>.</li>
+        <li><code>git checkout [rama]</code> - Cambia a una rama específica del repositorio. Si la rama no existe, se puede crear con <code>git checkout -b [rama]</code>.</li>
+    </ul>
+
+    <h2>Comparación con otros sistemas</h2>
+    <table class="table table-primary table-striped-columns">
+        <thead>
+            <tr>
+                <th>Sistema</th>
+                <th>Tipo</th>
+                <th>Popularidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Git</td>
+                <td>Distribuido</td>
+                <td>Muy alta</td>
+            </tr>
+            <tr>
+                <td>SVN</td>
+                <td>Centralizado</td>
+                <td>Media</td>
+            </tr>
+            <tr>
+                <td>Mercurial</td>
+                <td>Distribuido</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Perforce</td>
+                <td>Centralizado</td>
+                <td>Especializado (AAA, empresas)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-evenly">
+ <div class="card" style="width: 18rem;" >
+  <img src="imagenes/Git.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Git</h5>
+    <p class="card-text">GitHub es una plataforma en la nube que permite almacenar, compartir y colaborar en proyectos de código. Utiliza como base Git, un sistema de control de versiones que registra y administra cambios en archivos, facilitando el trabajo en equipo sin sobrescribir el trabajo de otros.</p>
+    <a href="https://www.bing.com/ck/a?!&&p=6012f8ae00e76006482fe49d7af54afd26e102da2b193f23f7de448e8e174b18JmltdHM9MTc3NzkzOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d1e360d-05fd-64af-1d71-23aa045865ca&psq=git&u=a1aHR0cHM6Ly9naXQtc2NtLmNvbS8" class="btn btn-primary alert alert-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Visitar</a>
+  </div>
+ </div>
+
+   <div class="card" style="width: 18rem;">
+  <img src="imagenes/SVN.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">SVN</h5>
+    <p class="card-text">SVN, abreviatura de Subversion, es una herramienta open source diseñada para el control de versiones de archivos y directorios, especialmente en proyectos de software. Su objetivo principal es permitir que varios desarrolladores trabajen simultáneamente sobre el mismo proyecto, manteniendo un historial de todas las modificaciones y facilitando la recuperación de versiones anteriores. Esto ayuda a organizar el desarrollo, revertir cambios erróneos y mantener la estabilidad del proyecto.</p>
+    <a href="https://www.bing.com/ck/a?!&&p=6012f8ae00e76006482fe49d7af54afd26e102da2b193f23f7de448e8e174b18JmltdHM9MTc3NzkzOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d1e360d-05fd-64af-1d71-23aa045865ca&psq=git&u=a1aHR0cHM6Ly9naXQtc2NtLmNvbS8" class="btn btn-primary alert alert-primary">Visitar</a>
+  </div>
+   </div>
+
+ <div class="card" style="width: 18rem;">
+  <img src="imagenes/Mercurial.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mercurial</h5>
+    <p class="card-text">Mercurial es un sistema de control de versiones multiplataforma, diseñado principalmente para desarrolladores de software. Fue creado por Matt Mackall y lanzado por primera vez en 2005. Su principal objetivo es ofrecer un alto rendimiento y escalabilidad, permitiendo un desarrollo completamente distribuido sin necesidad de un servidor central.</p>
+    <a href="https://www.bing.com/ck/a?!&&p=6012f8ae00e76006482fe49d7af54afd26e102da2b193f23f7de448e8e174b18JmltdHM9MTc3NzkzOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d1e360d-05fd-64af-1d71-23aa045865ca&psq=git&u=a1aHR0cHM6Ly9naXQtc2NtLmNvbS8" class="btn btn-primary alert alert-primary">Visitar</a>
+  </div>
+  </div>
+
+   <div class="card" style="width: 18rem;">
+  <img src="imagenes/Perforce.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Perforce</h5>
+    <p class="card-text">Perforce es una herramienta de control de versiones (SCM) que permite gestionar cambios en el código fuente de manera eficiente. Es especialmente útil en el desarrollo de videojuegos, ya que ayuda a prevenir errores y garantiza la estabilidad de los juegos. Perforce permite a los desarrolladores guardar instantáneas de su trabajo, lo que les permite revertir cambios en caso de que algo salga mal. Además, es accesible para equipos pequeños y medianos, lo que la convierte en una opción popular en la industria del videojuego.</p>
+    <a href="https://www.bing.com/ck/a?!&&p=6012f8ae00e76006482fe49d7af54afd26e102da2b193f23f7de448e8e174b18JmltdHM9MTc3NzkzOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d1e360d-05fd-64af-1d71-23aa045865ca&psq=git&u=a1aHR0cHM6Ly9naXQtc2NtLmNvbS8" class="btn btn-primary alert alert-primary">Visitar</a>
+  </div>
+  </div>
+    </div>
+
+    <p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Toggle width collapse
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It’s hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+      <script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this alert message!', 'success')
+  })
+}
+      </script>
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+    </form>
+  </div>
+
+    <h2>¿Ya usaste Git?</h2>
+    <p>Completá el siguiente formulario para compartir tu experiencia:</p>
+
+    <form class="form">
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="form-control">
+
+        <label for="experiencia">¿Qué usás más?</label><br>
+        <select id="experiencia" name="experiencia" class="form-select">
+            <option value="git">Git</option>
+            <option value="github">Git + GitHub</option>
+            <option value="otro">Otro sistema</option>
+            <option value="ninguno">Todavía no uso ninguno</option>
+        </select>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <input type="submit" value="Enviar" class="btn btn-outline-primary mt-2">
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
